@@ -23,6 +23,7 @@
   flex-direction: column;
 }
 
+/* HERO SECTION */
 .hero {
   justify-content: center;
   align-items: center;
@@ -47,18 +48,22 @@
   border-radius: 7px;
 }
 
+
+/* ACTIVITIES SECTIONS */
 .activities {
   padding: 2rem 0;
-  gap: 1.5rem;
+  gap: 2.5rem;
   color: var(--text-black);
   background-color: var(--color-secondary);
 }
 
 .activities-cards {
   display: flex;
+  gap: 1.5rem;
 }
 
 .activity-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +75,3 @@
   aspect-ratio: 1;
   border-radius: 50%;
 }
-
-/* .activities-cards > * {
-  border: solid;
-} */
