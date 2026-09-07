@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #F25C54;
+  --color-secondary: #F4845F;
+  --color-blue-100: #A8DADC;
+  --color-blue-200: #457B9D;
+  --color-blue-300: #1D3557;
+
+  --text-white: #FFF;
+  --text-black: #1D3557;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.section {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-white);
+  background-image: url("images/section-hero.jpg");
+  background-size: cover;
+}
+
+.title {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+}
+
+.subtitle {
+  padding: 0.5rem 0.1rem;
+  max-width: 70%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  border-radius: 7px;
+}
+
+.activities {
+  padding: 2rem 0;
+  gap: 1.5rem;
+  color: var(--text-black);
+  background-color: var(--color-secondary);
+}
+
+.activities-cards {
+  display: flex;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.activity-img {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+/* .activities-cards > * {
+  border: solid;
+} */
