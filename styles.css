@@ -7,6 +7,8 @@
 
   --text-white: #FFF;
   --text-black: #1D3557;
+
+  --radius: 9px;
 }
 
 * {
@@ -17,14 +19,14 @@
   font-family: sans-serif;
 }
 
-.section {
+section {
   height: 25rem;
   display: flex;
   flex-direction: column;
 }
 
 /* HERO SECTION */
-.hero {
+.hero-section {
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -33,24 +35,24 @@
   background-size: cover;
 }
 
-.title {
+.hero-title {
   padding: 0.5rem 1.2rem;
   background-color: var(--color-primary);
-  border-radius: 7px;
+  border-radius: var(--radius);
 }
 
-.subtitle {
+.hero-subtitle {
   padding: 0.5rem 0.1rem;
   max-width: 70%;
   font-size: 1.1rem;
   font-weight: 600;
   background-color: var(--color-secondary);
-  border-radius: 7px;
+  border-radius: var(--radius);
 }
 
 
 /* ACTIVITIES SECTIONS */
-.activities {
+.activities-section {
   padding: 2rem 0;
   gap: 2.5rem;
   color: var(--text-black);
@@ -74,4 +76,34 @@
   width: 100px;
   aspect-ratio: 1;
   border-radius: 50%;
+}
+
+/* GUIDE SECTION */
+.guide-section {
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-card {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  width: 70%;
+  max-width: 700px;
+  background-color: var(--color-blue-100);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 0 var(--color-blue-300);
+}
+
+.guide-img {
+  height: 250px;
+  border-radius: var(--radius);
+}
+
+.guide-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  height: fit-content;
 }
