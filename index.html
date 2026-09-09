@@ -4,41 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mayotte - Présentation</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+  <nav style="display: none;">
+    <ul class="language-list">
+      <li><a href="index.html" onclick="changeLanguage('en')">English</a></li>
+      <li><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
+    </ul>
+  </nav>
+
   <section class="hero-section">
-    <h1 class="hero-title">VISITER MAYOTTE</h1>
-    <p class="hero-subtitle">Profiter de la nature et de l'un des plus beau lagon du monde&nbsp;!</p>
+    <h1 class="hero-title" data-i18n="hero_section_title">VISITER MAYOTTE</h1>
+    <p class="hero-subtitle" data-i18n="hero_section_subtitle">Profiter de la nature et de l'un des plus beau lagon du monde&nbsp;!</p>
   </section>
 
   <section class="activities-section">
-    <h2 class="">Top 3 des activités à faire à Mayotte</h2>
+    <h2 data-i18n="activities_section_title">Top 3 des activités à faire à Mayotte</h2>
 
     <div class="activity-cards">
       <div class="activity-card">
-        <img class="activity-img" src="images/activity1.jpg" alt="">
-        <h3 class="activity-title">Profiter de la plage</h3>
-        <p>L'ile compte 186 plages ! De quoi avoir le choix. (Observatoire des tortues marines)</p>
+        <img class="activity-img" src="assets/images/activity1.jpg" alt="">
+        <h3 class="activity-title" data-i18n="activity1_title">Profiter de la plage</h3>
+        <p data-i18n="activity1_description">L'ile compte 186 plages ! De quoi avoir le choix. (Observatoire des tortues marines)</p>
       </div>
 
       <div class="activity-card">
-        <img class="activity-img" src="images/activity2.jpg" alt="">
-        <h3 class="activity-title">Faire un tour aérien de l'île</h3>
-        <p>Survolez le magnifique paysage avec le lagon, le lac Dziani et d'autres sites impressionant.</p>
+        <img class="activity-img" src="assets/images/activity2.jpg" alt="">
+        <h3 class="activity-title" data-i18n="activity2_title">Faire un tour aérien de l'île</h3>
+        <p data-i18n="activity2_description">Survolez le magnifique paysage avec le lagon, le lac Dziani et d'autres sites impressionant.</p>
       </div>
 
       <div class="activity-card">
-        <img class="activity-img" src="images/activity3.jpg" alt="">
-        <h3 class="activity-title">Manger de bons plats locaux</h3>
-        <p>Il y en a pour tous les goûts : fruits, gâteaux, etc.</p>
+        <img class="activity-img" src="assets/images/activity3.jpg" alt="">
+        <h3 class="activity-title" data-i18n="activity3_title">Manger de bons plats locaux</h3>
+        <p data-i18n="activity3_description">Il y en a pour tous les goûts : fruits, gâteaux, etc.</p>
       </div>
     </div>
   </section>
 
   <section class="guide-section">
     <div class="guide-card">
-      <img src="images/guide.jpg" alt="" class="guide-img">
+      <img src="assets/images/guide.jpg" alt="" class="guide-img">
       <div class="guide-text">
         <h2>Votre guide</h2>
         <i>"Etant un enfant de l'ile, Mayotte represente toute mon enfance."</i>
@@ -46,5 +53,7 @@
       </div>
     </div>
   </section>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
