@@ -12,8 +12,8 @@ async function fetchLanguageData(lang) {
 }
 
 // update content based on selected language
-function updateContent(langData) {
-  document.documentElement.setAttribute("lang", langData); // set <html> "lang" attribute
+function updateContent(lang, langData) {
+  document.documentElement.setAttribute("lang", lang); // set <html> "lang" attribute
   document.querySelectorAll('[data-lang]').forEach(element => {
     const key = element.getAttribute('data-lang');
     element.innerHTML = langData[key];
@@ -24,7 +24,7 @@ function updateContent(langData) {
 async function changeLanguage(lang) {
   setLanguagePreference(lang);
   const langData = await fetchLanguageData(lang);
-  updateContent(langData);
+  updateContent(lang, langData);
 }
 
 // set language on page load
