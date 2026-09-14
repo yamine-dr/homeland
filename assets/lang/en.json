@@ -2,5 +2,14 @@
   "hero_section_title": "VISIT MAYOTTE",
   "hero_section_subtitle": "Take advantage of nature with one of the best lagoon in the world!",
 
-  "activities_section_title": "Top 3 activities to do at Mayotte"
+  "activities_section_title": "Top 3 activities to do at Mayotte",
+  "activity1_title": "Relax at the beach",
+  "activity1_description": "The island has 186 beaches! Giving a large 'pool' of choice. (Observatory of Marine Turtles)",
+  "activity2_title": "Aerial tour",
+  "activity2_description": "Fly over the magnificent landscape with the lagoon, Lake Dziani and other stunning sights.",
+  "activity3_title": "Delicious local meals",
+  "activity3_description": "There's something for everyone: fruit, cakes, etc.",
+
+  "guide_section_title": "Your guide",
+  "guide_section_subtitle": "\"As a child of the island, Mayotte represents my whole childhood.\""
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,6 @@
 </head>
 <body>
   <nav>
-    <!-- multilingual feature inspired from: https://medium.com/%40nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505 -->
     <ul class="language-switch">
       <li><button onclick="changeLanguage('en')">English</button></li>
       <li><button onclick="changeLanguage('fr')">Français</button></li>
@@ -16,30 +15,30 @@
   </nav>
 
   <section class="hero-section">
-    <h1 class="hero-title" data-i18n="hero_section_title">VISITER MAYOTTE</h1>
-    <p class="hero-subtitle" data-i18n="hero_section_subtitle">Profiter de la nature et de l'un des plus beau lagon du monde&nbsp;!</p>
+    <h1 class="hero-title" data-lang="hero_section_title"></h1>
+    <p class="hero-subtitle" data-lang="hero_section_subtitle"></p>
   </section>
 
   <section class="activities-section">
-    <h2 data-i18n="activities_section_title">Top 3 des activités à faire à Mayotte</h2>
+    <h2 data-lang="activities_section_title"></h2>
 
     <div class="activity-cards">
       <div class="activity-card">
         <img class="activity-img" src="assets/images/activity1.jpg" alt="">
-        <h3 class="activity-title" data-i18n="activity1_title">Profiter de la plage</h3>
-        <p data-i18n="activity1_description">L'ile compte 186 plages ! De quoi avoir le choix. (Observatoire des tortues marines)</p>
+        <h3 class="activity-title" data-lang="activity1_title"></h3>
+        <p data-lang="activity1_description"></p>
       </div>
 
       <div class="activity-card">
         <img class="activity-img" src="assets/images/activity2.jpg" alt="">
-        <h3 class="activity-title" data-i18n="activity2_title">Faire un tour aérien de l'île</h3>
-        <p data-i18n="activity2_description">Survolez le magnifique paysage avec le lagon, le lac Dziani et d'autres sites impressionant.</p>
+        <h3 class="activity-title" data-lang="activity2_title"></h3>
+        <p data-lang="activity2_description"></p>
       </div>
 
       <div class="activity-card">
         <img class="activity-img" src="assets/images/activity3.jpg" alt="">
-        <h3 class="activity-title" data-i18n="activity3_title">Manger de bons plats locaux</h3>
-        <p data-i18n="activity3_description">Il y en a pour tous les goûts : fruits, gâteaux, etc.</p>
+        <h3 class="activity-title" data-lang="activity3_title"></h3>
+        <p data-lang="activity3_description"></p>
       </div>
     </div>
   </section>
@@ -48,8 +47,8 @@
     <div class="guide-card">
       <img src="assets/images/guide.jpg" alt="" class="guide-img">
       <div class="guide-text">
-        <h2>Votre guide</h2>
-        <i>"Etant un enfant de l'ile, Mayotte represente toute mon enfance."</i>
+        <h2 data-lang="guide_section_title"></h2>
+        <i data-lang="guide_section_subtitle"></i>
         <b>Yamine Daroueche</b>
       </div>
     </div>

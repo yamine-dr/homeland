@@ -2,11 +2,14 @@
   "hero_section_title": "VISITER MAYOTTE",
   "hero_section_subtitle": "Profiter de la nature et de l'un des plus beau lagon du monde&nbsp;!",
 
-  "activities_section_title": "Top 3 des activités à faire à Mayotte (LANGUAGE FR RECHARGE!)",
+  "activities_section_title": "Top 3 des activités à faire à Mayotte",
   "activity1_title": "Profiter de la plage",
   "activity1_description": "L'ile compte 186 plages ! De quoi avoir le choix. (Observatoire des tortues marines)",
   "activity2_title": "Faire un tour aérien de l'île",
   "activity2_description": "Survolez le magnifique paysage avec le lagon, le lac Dziani et d'autres sites impressionant.",
   "activity3_title": "Manger de bons plats locaux",
-  "activity3_description": "Il y en a pour tous les goûts : fruits, gâteaux, etc."
+  "activity3_description": "Il y en a pour tous les goûts : fruits, gâteaux, etc.",
+
+  "guide_section_title": "Votre guide",
+  "guide_section_subtitle": "\"Etant un enfant de l'ile, Mayotte represente toute mon enfance.\""
 }

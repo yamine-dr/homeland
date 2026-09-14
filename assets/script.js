@@ -1,7 +1,8 @@
+// multilingual feature inspired from: https://medium.com/%40nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505
+
 // set language preference
 function setLanguagePreference(lang) {
   localStorage.setItem('language', lang);
-  document.documentElement.setAttribute("lang", lang); // set <html> "lang" attribute
 }
 
 // fetch language data
@@ -12,8 +13,9 @@ async function fetchLanguageData(lang) {
 
 // update content based on selected language
 function updateContent(langData) {
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
+  document.documentElement.setAttribute("lang", langData); // set <html> "lang" attribute
+  document.querySelectorAll('[data-lang]').forEach(element => {
+    const key = element.getAttribute('data-lang');
     element.innerHTML = langData[key];
   });
 }
@@ -25,7 +27,9 @@ async function changeLanguage(lang) {
   updateContent(langData);
 }
 
+// set language on page load
 window.addEventListener('DOMContentLoaded', async () => {
-  console.log("localStorage language: ", localStorage.getItem("language"));
-  console.log("<html> lang: ", document.documentElement.getAttribute("lang"));
+  const preferredLang = localStorage.getItem("language") || "fr";
+  changeLanguage(preferredLang);
+  
 });
