@@ -25,6 +25,38 @@ section {
   flex-direction: column;
 }
 
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: sticky;
+  top: 0;
+  background: #FFF;
+  border-bottom: 2px solid #000;
+}
+
+nav button {
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+nav button:hover {
+  cursor: pointer;
+  color: #ff7a18;
+}
+
+nav:has(button:hover) button:not(:hover) {
+  opacity: 0.3;
+}
+
 /* HERO SECTION */
 .hero-section {
   justify-content: center;

@@ -31,5 +31,8 @@ async function changeLanguage(lang) {
 window.addEventListener('DOMContentLoaded', async () => {
   const preferredLang = localStorage.getItem("language") || "fr";
   changeLanguage(preferredLang);
-  
 });
+
+// add lang buttons click listeners
+document.getElementById("en-lang-btn").addEventListener("click", () => changeLanguage("en"));
+document.getElementById("fr-lang-btn").addEventListener("click", () => changeLanguage("fr"));
